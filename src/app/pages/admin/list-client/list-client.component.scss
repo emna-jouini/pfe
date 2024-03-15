@@ -1,0 +1,94 @@
+
+
+.add-icon{
+
+  font-size: 30px; 
+  color:darkblue;
+
+}
+ 
+mat-toolbar{
+background-color: #10e887;
+
+margin-bottom: 50px;
+
+}
+mat-toolbar span{
+
+
+  color:white;
+}
+
+.addFilter{
+display: flex;
+justify-content:space-between;
+margin-left: 10px;
+margin-right: 80px;
+margin-top: 80px;
+
+
+
+}
+#container{
+
+margin-right:30px;
+margin-top:5px;
+
+}
+.filter{
+display: block;
+width: 350px;
+margin-left: 100px;
+
+
+
+}
+
+tr:hover td {
+background: whitesmoke;
+color:darkblue;
+background-color: ghostwhite;
+cursor:pointer;
+}
+
+
+table {
+border-collapse: collapse;
+background-color:whitesmoke;
+width: 1300px;
+margin-left: 20px;
+}
+tr {
+border-top: 2px solid darkblue;
+border-bottom:2px solid darkblue;
+}
+th{
+
+color:darkblue;
+font-size: 16px;
+
+}
+mat-paginator{
+
+background-color: whitesmoke;
+
+
+}
+.container{
+margin-left:10px;
+
+
+}
+mat-paginator{
+
+
+  margin-left:150px;
+  background-color: white;
+
+}
+
+
+
+
+
+

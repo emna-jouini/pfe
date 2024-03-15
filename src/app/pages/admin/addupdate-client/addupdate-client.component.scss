@@ -1,0 +1,130 @@
+.fieldscontainer{
+    display: flex;
+
+    display: flex;
+    flex-direction: row; 
+  }
+
+
+  .formContainer {
+    height: 780px;
+    width: 520px;
+    background-color: white;
+    border: 3px solid  #fcf9f93c;
+    border-radius: 3px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  
+    background-color: whitesmoke;
+  }
+  
+  .inputField {
+    display: block;
+    width: 350px;
+    margin-right: 20px;
+    height: 32px;
+    margin-bottom: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 3px; 
+  }
+  
+h2{
+display: flex;
+justify-content: center;
+color:darkblue;
+margin-bottom: 30px;
+
+}
+.labelField{
+  font-weight: bold;
+margin-left: 10px;
+margin-right: 30px;
+margin-bottom: 5px;
+display:block;
+width:130px;
+
+
+}
+.buttoncontainer{
+display: flex;
+justify-content: center;
+
+
+
+
+}
+.icon {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px; 
+        font-size: 32px; 
+        color: #10e887;
+        margin-top: 20px;
+      
+}
+ .buttoncontainer{
+        display: flex;
+        justify-content:center;
+        margin-top: 30px;
+
+
+      }
+      button{
+
+    
+      margin-top: 5px;
+      height: 40px;
+      width: 130px;
+      
+      font-size: 15px;
+      border: 3px solid  #fcf9f93c;
+      margin-left: 10px;
+      margin-right: 10px;
+     
+        
+      }
+      .button:hover{
+background-color: #10e887;
+color:darkblue;
+
+
+
+      }
+     
+    .input-container {
+        position: relative;
+      }
+      .input-icon{
+
+        position: absolute;
+        right: 30px; 
+        top: 35%;
+        transform: translateY(-50%);
+       
+
+
+      }
+      .field-message{
+        color: red;
+        margin:8px;
+        
+        
+        }
+        .gender{
+          display:flex;  
+          justify-content: space-between;
+        margin-top:10px;
+        margin-bottom:20px;
+        margin-right: 120px;
+        font-weight: bold;
+        margin-left: 10px;
+       
+        }
+      .genderOption{
+display: flex;
+justify-content: space-around;
+
+width: 300px;
+
+      }  

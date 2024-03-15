@@ -1,0 +1,141 @@
+{
+  "admin": [
+    {
+      "id": "c8f3",
+      "CIN": "09644671",
+      "firstName": "oumayma",
+      "lastName": "jouini",
+      "birthDate": "2001-10-29",
+      "gender": "Femme",
+      "hireDate": "2024-02-29",
+      "role": "admin",
+      "phone": "92025136",
+      "address": "03 Rue kawakibi ezzahra",
+      "email": "oumaymajouini57@gmail.com"
+    },
+    {
+      "id": "b879",
+      "CIN": "09644671",
+      "firstName": "lamia",
+      "lastName": "ben jemaa",
+      "birthDate": "2007-12-27",
+      "gender": "Femme",
+      "hireDate": "2024-03-14",
+      "role": "admin",
+      "phone": "25538994",
+      "address": "Lac",
+      "email": "oumaymajouini57@gmail.com"
+    }
+  ],
+  "client": [
+    {
+      "CIN": "09644671",
+      "firstName": "oumayma",
+      "lastName": "jouini",
+      "birthDate": "2001-10-29",
+      "gender": "Femme",
+      "salary": "200",
+      "job": "banque",
+      "phone": "92025136",
+      "address": "03 Rue kawakibi ezzahra",
+      "email": "oumaymajouini57@gmail.com",
+      "id": "e67e"
+    },
+    {
+      "CIN": "09644671",
+      "firstName": "oumayma",
+      "lastName": "jouini",
+      "birthDate": "2018-02-08",
+      "gender": "Femme",
+      "salary": 400,
+      "job": "htrgf",
+      "phone": "92025136",
+      "address": "03 Rue kawakibi ezzahra",
+      "email": "oumaymajouini57@gmail.com",
+      "id": "8475"
+    },
+    {
+      "id": "848d",
+      "CIN": "09644671",
+      "firstName": "oumayma",
+      "lastName": "jouini",
+      "birthDate": "2017-02-08",
+      "gender": "Femme",
+      "salary": 400,
+      "job": "htrgf",
+      "role": "admin",
+      "phone": "92025136",
+      "address": "03 Rue kawakibi ezzahra",
+      "email": "oumaymajouini57@gmail.com"
+    }
+  ],
+  "login": [
+    {
+      "login": "12345678",
+      "password": "oumaymajouini",
+      "id": "35d5"
+    },
+    {
+      "login": "987654321",
+      "password": "emnajouini",
+      "id": "99bd"
+    },
+    {
+      "id": "4c51",
+      "login": "12345678",
+      "password": "oumaymajouini"
+    },
+    {
+      "id": "99c6",
+      "login": "123123456",
+      "password": "1231345678"
+    },
+    {
+      "id": "a7d8",
+      "login": "oumaymajouini",
+      "password": "123456789"
+    },
+    {
+      "id": "ad14",
+      "login": "12345678",
+      "password": "o123456"
+    }
+  ],
+  "forget": [
+    {
+      "login": "12345678",
+      "email": "bob.anderson@example.com",
+      "id": "f0be"
+    },
+    {
+      "login": "987654321",
+      "email": "alice.johnson@example.com",
+      "id": "df25"
+    },
+    {
+      "id": "f789",
+      "login": "oumaymajouini",
+      "email": "oumaymajouini57@gmail.com"
+    },
+    {
+      "id": "2537",
+      "login": "oumaymajouini",
+      "email": "oumaymajouini57@gmail.com"
+    },
+    {
+      "id": "a9f5",
+      "login": "oumaymajouini",
+      "email": "oumaymajouini57@gmail.com"
+    },
+    {
+      "id": "31b2",
+      "login": "oumaymajouini",
+      "email": "oumaymajouini57@gmail.com"
+    },
+    {
+      "id": "a4a8",
+      "login": "oumaymajouini",
+      "email": "oumaymajouini57@gmail.com"
+    }
+  ]
+}

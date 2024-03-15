@@ -37,7 +37,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-easy-table/style.css"
+            
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -102,8 +106,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-easy-table/style.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+    "src/styles.css"
+            
             ],
+            
             "scripts": []
           }
         }

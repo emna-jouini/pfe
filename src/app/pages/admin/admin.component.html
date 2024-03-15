@@ -1,0 +1,29 @@
+
+<mat-toolbar>
+
+  <img class="logo" src="../../assets/logo.png" alt="AmenBank">
+  <h1>Le Partenaire de votre succès</h1>
+  <img class="image" src="../../assets/amennet.png" alt="Amen">
+</mat-toolbar>
+
+<section>
+  
+    <mat-sidenav mode="side" opened="true">
+      
+      <mat-nav-list class="vertical-nav">
+        <a mat-list-item routerLink="admin">
+          <mat-icon class="icon">person</mat-icon> 
+          <span>Admins</span> 
+        </a>
+        
+        <a mat-list-item routerLink="client">
+          <mat-icon class="icon">people</mat-icon> 
+          <span>Clients</span> 
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+<router-outlet></router-outlet>
+</section>
+
+
+

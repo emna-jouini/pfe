@@ -1,0 +1,178 @@
+.form{
+
+display: flex;
+justify-content: left;
+margin-top: 60px;
+margin-bottom: 100px;
+background-color:white ;
+margin-right: 130px;
+border: 2px solid gainsboro; 
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+width:800px;
+height:605px;
+border-radius: 10px;
+margin-left: 100px;
+}
+img{
+
+height: 600px;
+width:400px;
+margin-top: 0;
+display: block;
+
+}
+
+.logo{
+
+height:90px;
+width:150px;
+margin-left: 30px;
+
+}
+mat-toolbar{
+    display: flex;
+    justify-content: space-around;
+height:100px;
+background-color: white;
+border-bottom: #35e194 solid 3px;
+
+
+}
+h1{
+
+color:black;
+
+
+
+
+
+}
+.image{
+   
+   
+height: 30px;
+width: 150px;
+
+
+}
+.contact{
+
+
+width:200px;
+margin-top: 60px;
+
+border: 2px solid gainsboro; 
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+background-color: white;
+height:605px;
+border-radius: 5px;
+padding-left:10px;
+margin-right: 30px;
+
+
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+width: 300px;
+background-color:white;
+margin-left: 50px;
+margin-right: 50px;
+height: 700px;
+
+
+}
+p{
+color:black;
+display: block;
+padding-left: 20px;
+font-size: 15px;
+padding-right: 18px;
+
+}
+h2{
+padding-top: 40px;
+padding-bottom: 70px;
+    color:darkblue;
+ 
+padding-left: 20px;
+
+}
+.contact-container{
+margin-bottom: 20px;
+margin-right: 20px;
+display: flex;
+justify-content: left;
+
+
+}
+svg{
+
+    color:#35e194;
+}
+.contactIcons{
+    width:250px;
+margin-top: 60px;
+margin-left: 120px;
+border: 2px solid gainsboro; 
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+background-color: white;
+height:605px;
+border-radius: 5px;
+padding-left: 30px;
+margin-right: 30px;
+
+
+
+
+
+
+
+}
+.contactIcons svg{
+color:black;
+margin-top: 50px;
+padding-right: 20px;
+
+
+}
+
+
+
+.icon {
+ 
+    color:#35e194; 
+    font-size: 1rem; 
+    margin-right: 8px; 
+  }
+
+  
+  .facebook:hover {
+    fill: #070be2; 
+    cursor: pointer; 
+  }
+
+  .twitter:hover {
+    fill:darkturquoise;
+    cursor: pointer; 
+  }
+  .youtube:hover {
+    fill:red;
+    cursor: pointer; 
+  }
+
+  .instagram:hover {
+    fill:palevioletred;
+    cursor: pointer; 
+  }
+
+  .linkedIn:hover {
+    fill:rgb(127, 225, 255);
+    cursor: pointer; 
+  }
+
+
+  
+  
+
+

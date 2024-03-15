@@ -1,0 +1,43 @@
+<form (ngSubmit)="onLogin()" [formGroup]="loginForm">
+  <h2>Accéder à mes comptes</h2>
+
+  <label for="login">Login:</label><br>
+  <div class="input-container"> 
+    <input class="input" type="text" id="login" formControlName="login" placeholder="Veuillez saisir votre Login"><br>
+  </div>
+  <div *ngIf="isRequiredField('login')" class="field-message">
+    *Login obligatoire.
+  </div>
+  <div *ngIf="loginForm.get('login')?.hasError('pattern') && !isRequiredField('login')" class="field-message">
+    *Le login doit contenir exactement 8 chiffres.
+  </div>
+
+  <label for="password">Mot de passe:</label><br>
+  <div class="input-container"> 
+    <input class="input"  matInput [type]="showPassword ? 'text' : 'password'" formControlName="password" placeholder="Veuillez saisir votre mot de passe">
+    <div class="password-checkbox"> 
+      <label>
+        <input type="checkbox" (change)="togglePasswordVisibility($event)">
+        Afficher le mot de passe
+      </label>
+    </div>
+  </div>
+  
+  <div *ngIf="isRequiredField('password')" class="field-message">
+    *Mot de passe obligatoire.
+  </div>
+  <div *ngIf="loginForm.get('password')?.hasError('pattern') && !isRequiredField('password')" class="field-message">
+    *Le mot de passe doit contenir des lettres et des chiffres 
+  </div>
+  <div *ngIf="loginForm.get('password')?.hasError('minlength') && !isRequiredField('password')" class="field-message">
+    Longueur minimale de 6 caractères.
+  </div>
+
+  <div class="buttoncontainer">
+    <button class="submit" type="submit">Connexion</button><br>
+  </div>
+  <a [routerLink]="['/auth/forget']">Mot de passe oublié ?</a><br>
+  <div *ngIf="showGlobalError" class="error-message">
+    <i class="material-icons">cancel</i> IDENTIFIANT OU MOT DE PASSE INVALIDE(S). VEUILLEZ RÉESSAYER.
+  </div>
+</form>

@@ -1,0 +1,135 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="addUpdateClientForm" class="formContainer">
+   
+    <i><fa-icon [icon]="users" class="icon"></fa-icon></i> 
+    <h2>Ajouter un client</h2>
+
+    <div class="fieldscontainer">
+      <label for="CIN" class="labelField">CIN</label>
+      <div class="input-container"> 
+      <input type="text" id="CIN" formControlName="CIN" placeholder="Veuillez saisir le CIN" class="inputField"  required />
+      <i><fa-icon [icon]="user" class="input-icon"></fa-icon></i> 
+  </div>
+</div>
+
+   
+     <div class="fieldscontainer">
+          <label for="firstName" class="labelField">Prénom</label>
+          <div class="input-container"> 
+          <input type="text" id="firstName" formControlName="firstName" placeholder="Veuillez saisir le  prénom" class="inputField"  required />
+          <i><fa-icon [icon]="user" class="input-icon"></fa-icon></i> 
+      </div>
+    </div>
+    <div *ngIf="isRequiredField('firstName')" class="field-message">
+      *Prénom oblogatoire.
+    </div>
+      <div class="fieldscontainer">
+        <label for="lastName" class="labelField">Nom</label>
+        <div class="input-container"> 
+        <input type="text" id="lastName" formControlName="lastName" placeholder="Veuillez saisir le nom" class="inputField"  required />
+        <i><fa-icon [icon]="user" class="input-icon"></fa-icon></i> 
+    </div>
+</div>
+<div *ngIf="isRequiredField('lastName')" class="field-message">
+  *Nom oblogatoire.
+</div>
+<div class="fieldscontainer">
+  <label for="birthDate" class="labelField">Date de naissance </label>
+  <div class="input-container"> 
+  <input type="date" id="birthDate" formControlName="birthDate" placeholder="Veuillez saisir la date de naissance" class="inputField" required />
+
+</div>
+</div>
+<div *ngIf="isRequiredField('birthDate')" class="field-message">
+*Date de naissance oblogatoire.
+</div>
+<div class="gender">
+<label for="gender" class="genderLabel">Genre</label>
+<div class="genderOption">
+<div>
+<input type="radio" id="men" formControlName="gender" value="Homme" name="gender">
+<label for="men">Homme</label>
+</div>
+<div>
+<input type="radio" id="women" formControlName="gender" value="Femme" name="gender">
+<label for="women">Femme</label>
+</div>
+</div>
+
+</div>
+
+
+<div class="fieldscontainer">
+<label for="salary" class="labelField">Salaire</label>
+<div class="input-container"> 
+<input type="number" id="salary" formControlName="salary" class="inputField" placeholder="Veuillez saisir le salaire" required />
+
+</div>
+</div>
+<div *ngIf="isRequiredField('salary')" class="field-message">
+*date d'embauche oblogatoire.
+</div>
+<div class="fieldscontainer">
+    <label for="job" class="labelField">Occupation</label>
+    <div class="input-container"> 
+    <input type="text" id="job" formControlName="job" class="inputField" placeholder="Veuillez saisir l'occupation" required />
+    
+    </div>
+    </div>
+    <div *ngIf="isRequiredField('job')" class="field-message">
+    *date d'embauche oblogatoire.
+    </div>
+
+<div class="fieldscontainer">
+<label for="role" class="labelField">Role</label>
+<div class="input-container"> 
+  <select formControlName="role" class="inputField" placeholder="Veuillez sélectionner un role">
+    <option value="admin">Client</option>
+  </select>
+</div>
+</div>
+<div class="fieldscontainer">
+<label for="phone" class="labelField">Téléphone</label>
+<div class="input-container"> 
+<input type="phone" id="phone" formControlName="phone" placeholder="Veuillez saisir le numéro de téléphone" class="inputField"  required />
+<i><fa-icon [icon]="phone" class="input-icon"></fa-icon></i> 
+</div>
+</div>
+<div *ngIf="isRequiredField('phone')" class="field-message">
+*Numéro de téléphone oblogatoire.
+</div>
+<div class="fieldscontainer">
+<label for="address" class="labelField">Adresse</label>
+<div class="input-container"> 
+<input type="address" id="address" formControlName="address" placeholder="Veuillez saisir l'adresse" class="inputField" required />
+<i><fa-icon [icon]="address" class="input-icon"></fa-icon></i> 
+</div>
+</div>
+<div *ngIf="isRequiredField('address')" class="field-message">
+*Adresse oblogatoire.
+</div>
+
+<div class="fieldscontainer">
+<label for="email" class="labelField">Email</label>
+<div class="input-container"> 
+<input type="email" id="email" formControlName="email" placeholder="Veuillez saisir l'email" class="inputField" required />
+<i><fa-icon [icon]="email" class="input-icon"></fa-icon></i> 
+</div>
+</div>
+<div *ngIf="isRequiredField('email')" class="field-message">
+*Email oblogatoire.
+</div>
+
+
+<div class="buttoncontainer">
+ 
+
+<button mat-raised-button color="primary" type="submit" class="submit" class="button">{{data ? 'Modifier': 'Ajouter'}}</button>
+<button mat-raised-button color="warn" type="button" [mat-dialog-close]="false" >Annuler</button>
+
+</div>
+  
+</form>
+   
+
+
+
