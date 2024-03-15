@@ -1,17 +1,30 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ClientRoutingModule } from './client-routing.module';
-import { CompteComponent } from './compte/compte.component';
+
+import { MatTableModule } from '@angular/material/table';
+import { MatListModule } from '@angular/material/list';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 
 
 @NgModule({
   declarations: [
-    CompteComponent
+    
   ],
   imports: [
     CommonModule,
-    ClientRoutingModule
+    ClientRoutingModule,
+    MatTableModule,
+    MatTableModule,
+    MatListModule,
+    MatExpansionModule,
+    MatDividerModule,
+    MatSidenavModule
+
   ]
 })
 export class ClientModule { }

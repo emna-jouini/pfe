@@ -1,0 +1,98 @@
+
+  
+  <div class="addFilter" >
+    <mat-form-field class="filter">
+  
+      <mat-label >Rechercher</mat-label>
+      <input class="search"  matInput (keyup)="applyFilter($event)" placeholder="Veuillez saisir l'élément à rechercher" #input>
+    </mat-form-field>
+    <button mat-icon-button (click)="openAddForm()" matTooltip="Ajouter un client">
+      <fa-icon [icon]="faPlus" class="add-icon" ></fa-icon>
+    </button>
+  </div>
+  
+  
+  <div class="mat-elevation-z8" id="container">
+    <table mat-table [dataSource]="dataSource" matSort  style="min-width:500px;">
+      
+     
+      
+       
+  
+      <!-- firstName -->
+      <ng-container matColumnDef="firstName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Prénom</th>
+        <td mat-cell *matCellDef="let row"> {{row.firstName}} </td>
+      </ng-container>
+        <!-- lastName -->
+        <ng-container matColumnDef="lastName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Nom </th>
+          <td mat-cell *matCellDef="let row"> {{row.lastName}} </td>
+        </ng-container>
+        
+        <ng-container matColumnDef="birthDate">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Date de naissance </th>
+            <td mat-cell *matCellDef="let row"> {{row.birthDate}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="hireDate">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Date d'embauche </th>
+            <td mat-cell *matCellDef="let row"> {{row.hireDate}} </td>
+          </ng-container>
+         
+       
+        
+        
+  
+            
+          
+    
+  
+           <!--phone-->
+             <ng-container matColumnDef="phone">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Phone </th>
+              <td mat-cell *matCellDef="let row"> {{row.phone}} </td>
+              </ng-container>
+                    <!-- address-->
+             <ng-container matColumnDef="address">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Adresse </th>
+              <td mat-cell *matCellDef="let row"> {{row.address}} </td>
+              </ng-container>
+  
+                    <!--email-->
+             <ng-container matColumnDef="email">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Email </th>
+              <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+              </ng-container>
+  
+                  <!--action-->
+                  <ng-container matColumnDef="action">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+                    <td mat-cell *matCellDef="let row">
+                      <button mat-icon-button color="primary" (click)="openEditForm(row)" matTooltip="Modifier">
+                        <mat-icon>edit</mat-icon>
+                      </button>
+                      <button mat-icon-button color="warn" (click)="deleteAdmin(row.id)" matTooltip="Effacer">
+                        <mat-icon>delete</mat-icon>
+                      </button>
+                    </td>
+                  </ng-container>
+  
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+  
+      
+
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4">Aucune donnée ne correspond au filtre "{{input.value}}"</td>
+      </tr>
+    </table>
+  
+  
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="choisir une page"></mat-paginator>
+  </div>
+  
+  
